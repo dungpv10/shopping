@@ -12,6 +12,12 @@ module.exports = {
     'webpack/hot/only-dev-server',
     './src/index.js',
     './res/scss/main.scss',
+      './res/scss/font-awesome.min.css',
+      './res/scss/animate.css',
+      './res/scss/price-range.css',
+      // './res/scss/prettyPhoto.css',
+      './res/scss/responsive.css',
+      './res/js/index.js'
   ],
   output: {
     path: path.join(__dirname, '../server/public'),
@@ -24,7 +30,9 @@ module.exports = {
     historyApiFallback: true
   },
   module: {
-    rules: [{
+    rules: [
+        { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+        {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -35,7 +43,7 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
@@ -43,11 +51,12 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {}  
+            options: {}
           }
         ]
-      },
+      }
     ],
+
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -57,5 +66,14 @@ module.exports = {
       template: path.join(__dirname, '../server/views/index.dev.ejs'),
       inject: false,
     }),
-  ],
+      new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+          'window.jQuery': 'jquery',
+          Popper: ['popper.js', 'default'],
+          // In case you imported plugins individually, you must also require them here:
+          Util: "exports-loader?Util!bootstrap/js/dist/util",
+          Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
+      })
+  ]
 };

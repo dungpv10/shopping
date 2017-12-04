@@ -31,9 +31,12 @@
   },
   "homepage": "https://github.com/tahnik/react-express-webpack-babel#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "cross-env": "^5.0.5",
     "ejs": "^2.5.7",
+    "exports-loader": "^0.6.4",
     "express": "^4.14.0",
+    "jquery": "^3.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
@@ -62,6 +65,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
+    "url-loader": "^0.6.2",
     "webpack": "^3.5.3",
     "webpack-dev-server": "^2.4.1",
     "webpack-node-externals": "^1.2.0"

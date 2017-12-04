@@ -1,5 +1,5 @@
-import { connect } from 'react-redux';
-import ListItemPreview from '../components/list_item_preview';
+import { connect } from "react-redux";
+import ListItemPreview from "../components/list_item_preview";
 
 /*
  This is a redux specific function.
@@ -8,9 +8,9 @@ import ListItemPreview from '../components/list_item_preview';
  Whenever this list changes, any component that is using this list of item will re-render.
  */
 function mapStateToProps(state) {
-  return {
-    item: state.list.itemPreview,
-  };
+    return {
+        item: state.list.itemPreview,
+    };
 }
 
 /*

@@ -35,7 +35,7 @@ module.exports = {
             options: {
               outputPath: 'images/',
               emitFile: false,
-            }  
+            }
           }
         ]
       },
