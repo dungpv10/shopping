@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import logoImage from "../../../../../res/images/home/logo.jpg";
-import { NavLink } from 'react-router-dom';
+import {NavLink, Link} from "react-router-dom";
 
 class Header extends Component {
     render() {
@@ -11,19 +11,19 @@ class Header extends Component {
                         <div className="col-sm-6">
                             <div className="contactinfo">
                                 <ul className="nav nav-pills">
-                                    <li><a><i className="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                                    <li><a><i className="fa fa-envelope"></i> info@domain.com</a></li>
+                                    <li><a><i className="fa fa-phone" /> +2 95 01 88 821</a></li>
+                                    <li><a><i className="fa fa-envelope" /> info@domain.com</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-sm-6">
                             <div className="social-icons pull-right">
                                 <ul className="nav navbar-nav">
-                                    <li><a ><i className="fa fa-facebook"></i></a></li>
-                                    <li><a ><i className="fa fa-twitter"></i></a></li>
-                                    <li><a ><i className="fa fa-linkedin"></i></a></li>
-                                    <li><a ><i className="fa fa-dribbble"></i></a></li>
-                                    <li><a ><i className="fa fa-google-plus"></i></a></li>
+                                    <li><a><i className="fa fa-facebook" /></a></li>
+                                    <li><a><i className="fa fa-twitter" /></a></li>
+                                    <li><a><i className="fa fa-linkedin" /></a></li>
+                                    <li><a><i className="fa fa-dribbble" /></a></li>
+                                    <li><a><i className="fa fa-google-plus" /></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,42 +36,21 @@ class Header extends Component {
                     <div className="row">
                         <div className="col-sm-4">
                             <div className="logo pull-left">
-                                <a href="/"><img src={logoImage} alt="logo" /></a>
+                                <Link to="/"><img src={logoImage} alt="logo"/></Link>
                             </div>
-                            <div className="btn-group pull-right">
-                                <div className="btn-group">
-                                    <button type="button" className="btn btn-default dropdown-toggle usa"
-                                            data-toggle="dropdown">
-                                        USA &nbsp;
-                                        <span className="caret"></span>
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li><a href='#'>Canada</a></li>
-                                        <li><a href='#'>UK</a></li>
-                                    </ul>
-                                </div>
 
-                                <div className="btn-group">
-                                    <button type="button" className="btn btn-default dropdown-toggle usa"
-                                            data-toggle="dropdown">
-                                        DOLLAR &nbsp;
-                                        <span className="caret"></span>
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li><a >Canadian Dollar</a></li>
-                                        <li><a >Pound</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                         <div className="col-sm-8">
                             <div className="shop-menu pull-right">
                                 <ul className="nav navbar-nav">
-                                    <li><NavLink to={'/shop'} ><i className="fa fa-user"></i> Shop</NavLink></li>
-                                    <li><a ><i className="fa fa-star"></i> Wishlist</a></li>
-                                    <li><a href="checkout.html"><i className="fa fa-crosshairs"></i> Checkout</a></li>
-                                    <li><a href="cart.html"><i className="fa fa-shopping-cart"></i> Cart</a></li>
-                                    <li><a href="login.html"><i className="fa fa-lock"></i> Login</a></li>
+                                    <li><NavLink to={"/shop"}><i className="fa fa-user" />Shop</NavLink></li>
+                                    <li><a><i className="fa fa-star" /> <NavLink to={"/wishlist"}>Đã
+                                        lưu</NavLink></a></li>
+                                    <li><NavLink to={"/checkout"}><i className="fa fa-crosshairs" />Thanh
+                                        toán</NavLink></li>
+                                    <li><NavLink to={"/cart"}><i className="fa fa-shopping-cart" />Giỏ hàng
+                                    </NavLink></li>
+                                    <li><NavLink to={"/login"}><i className="fa fa-lock" />Đăng nhập</NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,18 +63,17 @@ class Header extends Component {
                     <div className="row">
                         <div className="col-sm-9">
                             <div className="navbar-header">
-                                <button type="button" className="navbar-toggle" data-toggle="collapse"
-                                        data-target=".navbar-collapse">
+                                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span className="sr-only">Toggle navigation</span>
-                                    <span className="icon-bar"></span>
-                                    <span className="icon-bar"></span>
-                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar" />
+                                    <span className="icon-bar" />
+                                    <span className="icon-bar" />
                                 </button>
                             </div>
                             <div className="mainmenu pull-left">
                                 <ul className="nav navbar-nav collapse navbar-collapse">
                                     <li><a href="index.html" className="active">Home</a></li>
-                                    <li className="dropdown"><a >Shop<i className="fa fa-angle-down"></i></a>
+                                    <li className="dropdown"><a>Shop<i className="fa fa-angle-down"></i></a>
                                         <ul role="menu" className="sub-menu">
                                             <li><a href="shop.html">Products</a></li>
                                             <li><a href="product-details.html">Product Details</a></li>
@@ -104,7 +82,7 @@ class Header extends Component {
                                             <li><a href="login.html">Login</a></li>
                                         </ul>
                                     </li>
-                                    <li className="dropdown"><a >Blog<i className="fa fa-angle-down"></i></a>
+                                    <li className="dropdown"><a>Blog<i className="fa fa-angle-down"></i></a>
                                         <ul role="menu" className="sub-menu">
                                             <li><a href="blog.html">Blog List</a></li>
                                             <li><a href="blog-single.html">Blog Single</a></li>
