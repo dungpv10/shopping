@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   context: path.join(__dirname, '../client'),
   devtool: 'inline-source-map',
+
   entry: [
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:8080',
@@ -25,7 +26,7 @@ module.exports = {
     publicPath: '/',
   },
   devServer: {
-    hot: true,
+    // hot: true,
     publicPath: '/',
     historyApiFallback: true
   },
