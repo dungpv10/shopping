@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Categories from "../../common/categories";
-import product1 from "../../../../../res/images/home/product1.jpg";
 import product2 from "../../../../../res/images/home/product2.jpg";
 import product3 from "../../../../../res/images/home/product3.jpg";
 import HomeMainProduct from "./main-content/main-product";
