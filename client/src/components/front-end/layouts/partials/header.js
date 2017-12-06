@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logoImage from "../../../../../res/images/home/logo.jpg";
-
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -67,7 +67,7 @@ class Header extends Component {
                         <div className="col-sm-8">
                             <div className="shop-menu pull-right">
                                 <ul className="nav navbar-nav">
-                                    <li><a ><i className="fa fa-user"></i> Account</a></li>
+                                    <li><NavLink to={'/shop'} ><i className="fa fa-user"></i> Shop</NavLink></li>
                                     <li><a ><i className="fa fa-star"></i> Wishlist</a></li>
                                     <li><a href="checkout.html"><i className="fa fa-crosshairs"></i> Checkout</a></li>
                                     <li><a href="cart.html"><i className="fa fa-shopping-cart"></i> Cart</a></li>
