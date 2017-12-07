@@ -3,6 +3,7 @@ import MasterLayout from "../layouts/master_layout";
 import imgAd from "../../../../res/images/shop/advertisement.jpg";
 import Product from "../common/product";
 import Sidebar from "../common/sidebar";
+import Pagination from "../common/pagination";
 
 class Shop extends Component {
     render() {
@@ -30,12 +31,7 @@ class Shop extends Component {
                                     <Product />
                                     <Product />
                                     <Product />
-                                    <ul className="pagination">
-                                        <li className="active"><a href="">1</a></li>
-                                        <li><a href="">2</a></li>
-                                        <li><a href="">3</a></li>
-                                        <li><a href="">&raquo;</a></li>
-                                    </ul>
+                                    <Pagination />
                                 </div>
                             </div>
                         </div>
