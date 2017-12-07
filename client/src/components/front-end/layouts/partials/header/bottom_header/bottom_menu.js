@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+
 class BottomMenu extends Component {
     render() {
         return (<div className="col-sm-9">
@@ -13,7 +14,7 @@ class BottomMenu extends Component {
             </div>
             <div className="mainmenu pull-left">
                 <ul className="nav navbar-nav collapse navbar-collapse">
-                    <li><Link to="/" className="active">Trang chủ</Link></li>
+                    <li><Link to="/">Trang chủ</Link></li>
                     <li className="dropdown"><a>Sản phẩm<i className="fa fa-angle-down" /></a>
                         <ul role="menu" className="sub-menu">
                             <li><Link to="/danh-muc">Danh mục</Link></li>

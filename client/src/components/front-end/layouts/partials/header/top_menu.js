@@ -23,7 +23,7 @@ class TopMenu extends Component {
                                     <NavLink to={"/checkout"}><i className="fa fa-crosshairs" />Thanh toán</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/cart"}><i className="fa fa-shopping-cart" />Giỏ hàng</NavLink>
+                                    <NavLink to={"/gio-hang"}><i className="fa fa-shopping-cart" />Giỏ hàng</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to={"/login"}><i className="fa fa-lock" />Đăng nhập</NavLink>
