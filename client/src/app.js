@@ -7,8 +7,8 @@ import Wishlist from "./components/front-end/wistlist";
 import Contact from "./components/front-end/contact";
 import Login from "./components/front-end/login";
 import Cart from "./components/front-end/cart";
-
-// import NotFound from './components/errors/not_found';
+import News from "./components/front-end/news";
+import NewsDetail from "./components/front-end/news_detail";
 
 const App = () => (
     <div>
@@ -18,7 +18,8 @@ const App = () => (
         <Route exact path="/lien-he" component={Contact} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/gio-hang" component={Cart} />
-        {/*<Route component={NotFound} />*/}
+        <Route exact path="/tin-tuc" component={News} />
+        <Route exact path="/tin-tuc/:slug" component={NewsDetail} />
     </div>
 );
 

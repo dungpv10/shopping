@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import shipping from "../../../../res/images/home/shipping.jpg";
 
-class Categories extends Component {
+class Sidebar extends Component {
     render() {
         return (
             <div className="col-sm-3">
@@ -146,4 +146,4 @@ class Categories extends Component {
         );
     }
 }
-export default Categories;
+export default Sidebar;

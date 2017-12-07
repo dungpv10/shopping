@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Categories from "../../common/categories";
+import Sidebar from "../../common/sidebar";
 import product2 from "../../../../../res/images/home/product2.jpg";
 import product3 from "../../../../../res/images/home/product3.jpg";
 import HomeMainProduct from "./main-content/main-product";
@@ -9,7 +9,7 @@ class HomeMainContent extends Component {
         return (<section>
             <div className="container">
                 <div className="row">
-                    <Categories />
+                    <Sidebar />
 
                     <div className="col-sm-9 padding-right">
                         <HomeMainProduct />

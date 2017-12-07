@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MasterLayout from "../layouts/master_layout";
 import imgAd from "../../../../res/images/shop/advertisement.jpg";
 import Product from "../common/product";
-import Categories from "../common/categories";
+import Sidebar from "../common/sidebar";
 
 class Shop extends Component {
     render() {
@@ -16,7 +16,7 @@ class Shop extends Component {
                 <section>
                     <div className="container">
                         <div className="row">
-                            <Categories />
+                            <Sidebar />
 
                             <div className="col-sm-9 padding-right">
                                 <div className="features_items">

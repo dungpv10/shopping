@@ -16,17 +16,14 @@ class TopMenu extends Component {
                     <div className="col-sm-8">
                         <div className="shop-menu pull-right">
                             <ul className="nav navbar-nav">
-                                <li><NavLink to={"/shop"}><i className="fa fa-user" />Shop</NavLink></li>
-                                <li><NavLink to={"/wishlist"}><i className="fa fa-star" /> Đã lưu</NavLink>
+                                <li><NavLink to={"/shop"}> <i className="fa fa-user" /> Cửa hàng </NavLink></li>
+                                <li><NavLink to={"/wishlist"}> <i className="fa fa-star" /> Đã lưu </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/checkout"}><i className="fa fa-crosshairs" />Thanh toán</NavLink>
+                                    <NavLink to={"/gio-hang"}> <i className="fa fa-shopping-cart" /> Giỏ hàng </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={"/gio-hang"}><i className="fa fa-shopping-cart" />Giỏ hàng</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to={"/login"}><i className="fa fa-lock" />Đăng nhập</NavLink>
+                                    <NavLink to={"/login"}> <i className="fa fa-lock" /> Đăng nhập </NavLink>
                                 </li>
                             </ul>
                         </div>
