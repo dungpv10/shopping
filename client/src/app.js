@@ -20,9 +20,6 @@ const App = () => (
         <Route exact path="/gio-hang" component={Cart} />
         <Route exact path="/tin-tuc" component={News} />
         <Route exact path="/tin-tuc/:slug" component={NewsDetail} />
-        <Route path={"/admin"}>
-                <Route exact path={"/"} component={Shop} />
-        </Route>
     </div>
 );
 

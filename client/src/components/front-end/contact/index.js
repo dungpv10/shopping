@@ -11,7 +11,7 @@ class Contact extends Component {
                     <div className="bg">
                         <div className="row">
                             <div className="col-sm-12">
-                                <h2 className="title text-center">Contact <strong>Us</strong></h2>
+                                <h2 className="title text-center">Liên hệ <strong>chúng tôi</strong></h2>
                                 <div className="contact-map">
                                 <GMap isMarkerShown
                                       googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
@@ -25,14 +25,14 @@ class Contact extends Component {
                         <div className="row">
                             <div className="col-sm-8">
                                 <div className="contact-form">
-                                    <h2 className="title text-center">Get In Touch</h2>
-                                    <div className="status alert alert-success" style={{display: "none"}} ></div>
+                                    <h2 className="title text-center">Liên hệ</h2>
+                                    <div className="status alert alert-success" style={{display: "none"}} />
                                     <ContactForm />
                                 </div>
                             </div>
                             <div className="col-sm-4">
                                 <div className="contact-info">
-                                    <h2 className="title text-center">Contact Info</h2>
+                                    <h2 className="title text-center">Thông tin liên hệ </h2>
                                     <address>
                                         <p>E-Shopper Inc.</p>
                                         <p>935 W. Webster Ave New Streets Chicago, IL 60614, NY</p>
@@ -42,7 +42,7 @@ class Contact extends Component {
                                         <p>Email: info@e-shopper.com</p>
                                     </address>
                                     <div className="social-networks">
-                                        <h2 className="title text-center">Social Networking</h2>
+                                        <h2 className="title text-center">Kết nối với chúng tôi</h2>
                                         <ul>
                                             <li>
                                                 <a href="#"><i className="fa fa-facebook"/></a>
