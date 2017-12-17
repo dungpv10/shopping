@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/tahnik/react-express-webpack-babel#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
     "cross-env": "^5.1.1",
     "ejs": "^2.5.7",
@@ -46,7 +47,8 @@
     "react-redux": "^5.0.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "vhost": "^3.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,16 +1,16 @@
 const express = require("express");
-// import ssr from "./ssr";
+const bodyParser = require("body-parser");
 
 const app = express();
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
+const apiRouter = require("./api");
 
-app.get("/", (req, res) => {
-    res.send("vaoooo");
-})
+app.use("/api", apiRouter);
 
 app.listen(3000, () => {
     console.log("Hello World listening on port 3000!");

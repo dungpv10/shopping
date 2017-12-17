@@ -15,10 +15,11 @@ class BottomMenu extends Component {
             <div className="mainmenu pull-left">
                 <ul className="nav navbar-nav collapse navbar-collapse">
                     <li><Link to="/">Trang chủ</Link></li>
-                    <li className="dropdown"><a>Bánh<i className="fa fa-angle-down" /></a>
+                    <li className="dropdown"><a>Sản phẩm<i className="fa fa-angle-down" /></a>
                         <ul role="menu" className="sub-menu">
-                            <li><Link to="/danh-muc">Bánh ngọt</Link></li>
-                            <li><Link to="/san-pham">Bánh sinh nhật</Link></li>
+                            <li><Link to="/shop">Lego</Link></li>
+                            <li><Link to="/san-pham/abc">Flashcard</Link></li>
+                            <li><Link to="/san-pham/abc">Bộ học chữ</Link></li>
                         </ul>
                     </li>
                     <li><Link to="/tin-tuc">Tin tức</Link></li>

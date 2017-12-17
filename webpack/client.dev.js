@@ -11,6 +11,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
+      //front-end
     './src/index.js',
     './res/scss/main.scss',
       './res/scss/font-awesome.min.css',
@@ -18,7 +19,7 @@ module.exports = {
       './res/scss/price-range.css',
       // './res/scss/prettyPhoto.css',
       './res/scss/responsive.css',
-      './res/js/index.js'
+      './res/js/index.js',
   ],
   output: {
     path: path.join(__dirname, '../server/public'),
