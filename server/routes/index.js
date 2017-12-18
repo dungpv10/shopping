@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-const apiRouter = require("./api");
+const apiRouter = require("./api/rest");
 
 app.use("/api", apiRouter);
 
