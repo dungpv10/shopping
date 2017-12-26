@@ -77,6 +77,12 @@ const categoryController = {
                     ],
 
                 },
+                {
+                    slug: "cat-cho-meo",
+                    category_name: "Cát chó mèo",
+                    total_models: _.random(1, 10),
+                },
+
             ],
         });
     },
