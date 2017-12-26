@@ -15,14 +15,14 @@ import ProductDetail from "./components/front-end/product_detail";
 const App = () => (
     <div>
         <Route exact path="/" component={Home} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/wishlist" component={Wishlist} />
+        <Route exact path="/danh-muc/:slug?" component={Shop} />
+        <Route exact path="/da-luu" component={Wishlist} />
         <Route exact path="/lien-he" component={Contact} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/gio-hang" component={Cart} />
         <Route exact path="/tin-tuc" component={News} />
         <Route exact path="/tin-tuc/:slug" component={NewsDetail} />
-        <Route exact path="/san-pham/:slug" component={ProductDetail} />
+        <Route exact path="/san-pham/:slug?" component={ProductDetail} />
     </div>
 );
 

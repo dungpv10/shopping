@@ -1,8 +1,9 @@
-import { combineReducers } from 'redux';
-import list from './list';
+import { combineReducers } from "redux";
+import { getCategoriesForMenu } from "./category/get_for_menu";
+import { getCategoriesForSidebar } from "./category/get_for_sidebar";
 
 const rootReducer = combineReducers({
-  list, // shorthand for lists: lists
+    getCategoriesForMenu, getCategoriesForSidebar,
 });
 
 export default rootReducer;

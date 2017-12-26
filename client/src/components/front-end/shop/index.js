@@ -4,9 +4,11 @@ import imgAd from "../../../../res/images/shop/advertisement.jpg";
 import Product from "../common/product";
 import Sidebar from "../common/sidebar";
 import Pagination from "../common/pagination";
+import categoryService from "../../../services/category/category";
 
 class Shop extends Component {
     render() {
+        categoryService.getForMenu();
         return (
             <MasterLayout>
                 <section id="advertisement">

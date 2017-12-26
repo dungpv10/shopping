@@ -1,7 +1,13 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import getCategoriesForSidebarAction from "../../../../actions/category/category_for_sidebar";
 
 class Categories extends Component {
+    componentDidMount(){
+        this.props.dispatch(getCategoriesForSidebarAction());
+    }
     render() {
+        console.log(this.props.getCategoriesForSidebar.sidebar_categories);
         return (
             <div className="panel-group category-products" id="accordian">
                 <div className="panel panel-default">
@@ -113,4 +119,7 @@ class Categories extends Component {
     }
 }
 
-export default Categories;
+export default connect(function (state) {
+    const { getCategoriesForSidebar } = state;
+    return { getCategoriesForSidebar };
+})(Categories);
