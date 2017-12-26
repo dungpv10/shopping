@@ -10,7 +10,7 @@ import Cart from "./components/front-end/cart";
 import News from "./components/front-end/news";
 import NewsDetail from "./components/front-end/news_detail";
 import ProductDetail from "./components/front-end/product_detail";
-
+import Admin from "./components/admin/dashboard";
 
 const App = () => (
     <div>
@@ -23,6 +23,8 @@ const App = () => (
         <Route exact path="/tin-tuc" component={News} />
         <Route exact path="/tin-tuc/:slug" component={NewsDetail} />
         <Route exact path="/san-pham/:slug?" component={ProductDetail} />
+        {/*Admin*/}
+        <Route exact path="/admin" component={Admin} />
     </div>
 );
 
