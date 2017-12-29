@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Product from "../../../common/product";
 import { connect } from "react-redux";
-import getProductsForHOmePageAction from "../../../../../actions/product/get_for_home_page";
+import getProductsForHomePageAction from "../../../../../actions/product/get_for_home_page";
 
 class HomeMainProduct extends Component {
     componentDidMount() {
-        this.props.dispatch(getProductsForHOmePageAction());
+        this.props.dispatch(getProductsForHomePageAction());
     }
     render() {
         return (<div className="features_items">

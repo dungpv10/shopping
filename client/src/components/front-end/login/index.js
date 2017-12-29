@@ -11,16 +11,16 @@ class Login extends Component {
                     <div className="row">
                         <div className="col-sm-4 col-sm-offset-1">
                             <div className="login-form">
-                                <h2>Login to your account</h2>
+                                <h2>Đăng nhập</h2>
                                 <LoginForm/>
                             </div>
                         </div>
                         <div className="col-sm-1">
-                            <h2 className="or">OR</h2>
+                            <h2 className="or">Hoặc</h2>
                         </div>
                         <div className="col-sm-4">
                             <div className="signup-form">
-                                <h2>New User Signup!</h2>
+                                <h2>Đăng ký tài khoản</h2>
                                 <SignupForm/>
                             </div>
                         </div>

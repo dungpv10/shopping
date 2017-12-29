@@ -1,7 +1,7 @@
 import { getProductsForHomepageConst } from "../../consts";
 import axios from "axios";
 
-function getProductsForHOmePageAction (){
+function getProductsForHomePageAction (){
     function request() {
         return { type: getProductsForHomepageConst.GET_PRODUCT_SUCCESS };
     }
@@ -25,4 +25,4 @@ function getProductsForHOmePageAction (){
     };
 }
 
-export default getProductsForHOmePageAction;
+export default getProductsForHomePageAction;
