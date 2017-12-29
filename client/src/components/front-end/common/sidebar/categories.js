@@ -11,7 +11,6 @@ class Categories extends Component {
     }
     render() {
         const categories = this.props.getCategoriesForSidebar.sidebar_categories;
-        console.log('props', this.props)
         return (
             <div className="panel-group category-products" id="accordian">
                 {categories && categories.map((category, index) => {

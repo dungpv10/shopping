@@ -4,11 +4,15 @@ import imgAd from "../../../../res/images/shop/advertisement.jpg";
 import Product from "../common/product";
 import Sidebar from "../common/sidebar";
 import Pagination from "../common/pagination";
-import categoryService from "../../../services/category/category";
+import getProductsForHOmePageAction from "../../../actions/product/get_for_home_page";
+import { connect } from "react-redux";
 
 class Shop extends Component {
+    componentDidMount() {
+        this.props(getProductsForHOmePageAction());
+    }
     render() {
-        categoryService.getForMenu();
+        const products = this.props.getProductsForHomePage;
         return (
             <MasterLayout>
                 <section id="advertisement">
@@ -24,15 +28,9 @@ class Shop extends Component {
                             <div className="col-sm-9 padding-right">
                                 <div className="features_items">
                                     <h2 className="title text-center">Features Items</h2>
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
+                                    {products && products.products && products.products.map((product, index) => {
+                                        return (<Product key={index} product={product} />);
+                                    })}
                                     <Pagination />
                                 </div>
                             </div>
@@ -44,4 +42,7 @@ class Shop extends Component {
     }
 }
 
-export default Shop;
+export default connect(function(state){
+    const { getProductsForHomePage } = state;
+    return { getProductsForHomePage };
+})(Shop);

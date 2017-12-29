@@ -1,6 +1,6 @@
 import { bannerForHomePageConst } from "../../consts";
 
-function getBannerOfHomePage(state = { loading: false, banners_home_page: [] }, action){
+function getBannersOfHomePage(state = { loading: false, banners_home_page: [] }, action){
     switch (action.type) {
         case bannerForHomePageConst.GET_BANNER_REQUEST :
             return { ...state, loading: true };
@@ -14,4 +14,4 @@ function getBannerOfHomePage(state = { loading: false, banners_home_page: [] }, 
     }
 }
 
-export { getBannerOfHomePage };
+export { getBannersOfHomePage };

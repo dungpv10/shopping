@@ -13,12 +13,12 @@ class Sidebar extends Component {
                     <Categories />
 
                     <div className="brands_products">
-                        <h2>Nhãn hiệu</h2>
+                        <h2>Thương hiệu</h2>
                         <Branch />
                     </div>
 
                     <div className="price-range">
-                        <h2>Price Range</h2>
+                        <h2>Khoảng giá</h2>
                         <SearchByPrice />
                     </div>
 

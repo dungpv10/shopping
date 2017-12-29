@@ -15,7 +15,7 @@ function bannerForHomePageAction() {
     }
 
     return (dispatch) => {
-        axios.get(`${process.env.api_url}api/banner`).then(response => {
+        axios.get(`${process.env.api_url}api/banner/for-home-page`).then(response => {
             dispatch(request());
             if (response.data.code === 1) {
                 dispatch(success(response));

@@ -1,7 +1,7 @@
-const forHomePageConst = {
+const bannerForHomePageConst = {
     GET_BANNER_REQUEST: "GET_BANNER_REQUEST",
     GET_BANNER_SUCCESS: "GET_BANNER_SUCCESS",
     GET_BANNER_FAIL: "GET_BANNER_FAIL",
 }
 
-export default forHomePageConst;
+export default bannerForHomePageConst;

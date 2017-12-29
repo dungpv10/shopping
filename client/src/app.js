@@ -23,7 +23,7 @@ const App = () => (
         <Route exact path="/tin-tuc" component={News} />
         <Route exact path="/tin-tuc/:slug" component={NewsDetail} />
         <Route exact path="/san-pham/:slug?" component={ProductDetail} />
-        {/*Admin*/}
+        <Route exact path="/them-gio-hang" component={Cart} />
         <Route exact path="/admin" component={Admin} />
     </div>
 );
