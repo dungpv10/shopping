@@ -27,8 +27,8 @@ const productController = {
                 product_name: `Sản phẩm ${i}`,
                 slug: slug(`Sản phẩm ${i}`),
                 price: lodash.random(100, 1000),
-                thumbnail_path: thumbnails[lodash.random(0, thumbnails.length)],
-                category_name: categories[lodash.random(0, categories.length)],
+                thumbnail_path: thumbnails[lodash.random(0, thumbnails.length - 1)],
+                category_name: categories[lodash.random(0, categories.length - 1 )],
             });
         }
         const data = {
@@ -51,12 +51,60 @@ const productController = {
                 product_name: `Sản phẩm đề xuất ${i}`,
                 slug: slug(`Sản phẩm đề xuất ${i}`),
                 price: lodash.random(100, 1000),
-                thumbnail_path: thumbnails[lodash.random(0, thumbnails.length)],
+                thumbnail_path: thumbnails[lodash.random(0, thumbnails.length - 1)],
             });
         }
         res.json({
             code: response.success,
             message: "get recommended products successfully",
+            products,
+        });
+    },
+
+    getNavigationProducts(req, res) {
+        const thumbnails = [
+            "http://localhost:3000/images/products/product2.jpg",
+            "http://localhost:3000/images/products/product3.jpg",
+        ];
+        const products = [];
+        const categoryIds = [1, 2, 3];
+        for (let i = 0; i < 8; i++) {
+            products.push({
+                product_name: `Sản phẩm navigation ${i}`,
+                slug: slug(`Sản phẩm navigation ${i}`),
+                price: lodash.random(100, 1000),
+                category_id: categoryIds[lodash.random(0, categoryIds.length - 1)],
+                thumbnail_path: thumbnails[lodash.random(0, thumbnails.length - 1)],
+            });
+        }
+
+        const newProduct = lodash.filter(products, { "category_id": lodash.parseInt(req.query.category_id) });
+
+        res.json({
+            code: response.success,
+            category_id: lodash.parseInt(req.query.category_id),
+            products: newProduct,
+            message: "get navigation products successfully",
+        });
+    },
+
+    getCart(req, res) {
+        const products = [];
+        for (let i = 1; i < 5; i++){
+            const totalRandom = lodash.random(1, 10);
+            const unitPriceRandom = lodash.random(10, 100);
+            const product = {
+                product_name: `Product ${i} from cart`,
+                total: totalRandom,
+                unit_price: unitPriceRandom,
+                total_price: totalRandom * unitPriceRandom,
+                thumbnail_path: "http://localhost:3000/images/products/product2.jpg",
+            };
+            products.push(product);
+        }
+        res.json({
+            code: 1,
+            message: "get product from cart successfully",
             products,
         });
     },

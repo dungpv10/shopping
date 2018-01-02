@@ -12,7 +12,7 @@ class Login extends Component {
                         <div className="col-sm-4 col-sm-offset-1">
                             <div className="login-form">
                                 <h2>Đăng nhập</h2>
-                                <LoginForm/>
+                                <LoginForm />
                             </div>
                         </div>
                         <div className="col-sm-1">
@@ -21,7 +21,7 @@ class Login extends Component {
                         <div className="col-sm-4">
                             <div className="signup-form">
                                 <h2>Đăng ký tài khoản</h2>
-                                <SignupForm/>
+                                <SignupForm />
                             </div>
                         </div>
                     </div>

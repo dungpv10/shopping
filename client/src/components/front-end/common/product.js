@@ -10,9 +10,7 @@ class Product extends Component {
                 <div className="product-image-wrapper">
                     <div className="single-products">
                         <div className="productinfo text-center">
-                            <LazyLoadImg>
-                                <img src={product.thumbnail_path} alt="" />
-                            </LazyLoadImg>
+                            <img src={product.thumbnail_path} alt="" />
                             <h2>${product.price}</h2>
                             <p>{product.product_name}</p>
                             <a href="" className="btn btn-default add-to-cart">

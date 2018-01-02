@@ -4,12 +4,12 @@ import imgAd from "../../../../res/images/shop/advertisement.jpg";
 import Product from "../common/product";
 import Sidebar from "../common/sidebar";
 import Pagination from "../common/pagination";
-import getProductsForHOmePageAction from "../../../actions/product/get_for_home_page";
+import getProductsForHomePageAction from "../../../actions/product/get_for_home_page";
 import { connect } from "react-redux";
 
 class Shop extends Component {
     componentDidMount() {
-        this.props(getProductsForHOmePageAction());
+        this.props.dispatch(getProductsForHomePageAction());
     }
     render() {
         const products = this.props.getProductsForHomePage;

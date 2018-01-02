@@ -1,9 +1,9 @@
-import { getProductsForHomepageConst } from "../../consts";
 import axios from "axios";
+import { getProductsForHomepageConst } from "../../consts";
 
-function getProductsForHomePageAction (){
+function getProductsForHomePageAction() {
     function request() {
-        return { type: getProductsForHomepageConst.GET_PRODUCT_SUCCESS };
+        return { type: getProductsForHomepageConst.GET_PRODUCT_REQUEST };
     }
 
     function success(response) {
