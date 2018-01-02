@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import MasterLayout from "../layouts/master_layout";
 import BreadCrumb from "../common/breadcrumb";
 import ListItem from "./partials/list_item";

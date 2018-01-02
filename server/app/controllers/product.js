@@ -98,7 +98,7 @@ const productController = {
                 total: totalRandom,
                 unit_price: unitPriceRandom,
                 total_price: totalRandom * unitPriceRandom,
-                thumbnail_path: "http://localhost:3000/images/products/product2.jpg",
+                thumbnail_path: "http://localhost:3000/images/cart/one.jpg",
             };
             products.push(product);
         }

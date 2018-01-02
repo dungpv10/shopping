@@ -9,7 +9,7 @@ const bannerController = {
             "http://localhost:3000/images/banners/girl2.jpg",
             "http://localhost:3000/images/banners/girl3.jpg",
         ];
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 3; i++) {
             banners.push({
                 title: `Banner ${i}`,
                 sub_title: `Banner ${i}`,
