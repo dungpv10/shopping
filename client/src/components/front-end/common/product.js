@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import LazyLoadImg from "react-lazyload";
-import { Link } from "react-router-dom";
+import BootstrapModal from "../common/modal";
 
 class Product extends Component {
+    constructor(props){
+        super(props);
+        this.handleAddProductToCart = this.handleAddProductToCart.bind(this);
+    }
+    handleAddProductToCart(e) {
+        e.preventDefault();
+    }
     render() {
         const { product } = this.props;
         return (
             <div className="col-sm-4">
+                <BootstrapModal ref={"modal"} />
                 <div className="product-image-wrapper">
                     <div className="single-products">
                         <div className="productinfo text-center">
@@ -21,9 +28,9 @@ class Product extends Component {
                             <div className="overlay-content">
                                 <h2>${product.price}</h2>
                                 <p>{product.product_name}</p>
-                                <Link to="/them-gio-hang" className="btn btn-default add-to-cart">
+                                <a onClick={this.handleAddProductToCart} className="btn btn-default add-to-cart">
                                     <i className="fa fa-shopping-cart" />Thêm vào giỏ hàng
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
