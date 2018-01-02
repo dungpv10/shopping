@@ -5,7 +5,7 @@ class BootstrapModal extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            show: false,
+            show: this.props.show || false,
         };
     }
     render() {

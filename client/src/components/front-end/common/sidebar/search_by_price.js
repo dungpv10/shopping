@@ -1,6 +1,13 @@
 import React, { Component } from "react";
+import InputRange from "react-input-range";
 
 class SearchByPrice extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: { min: 2, max: 10 },
+        };
+    }
     render() {
         return (
             <div className="well text-center">

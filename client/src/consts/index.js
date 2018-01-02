@@ -5,9 +5,11 @@ import getProductsForHomepageConst from "./product/get_for_home_page";
 import getRecommendedProductConst from "./product/get_recommended_product";
 import getNavigationProductsConst from "./product/get_navigation_product";
 import getProductFromCartConst from "./product/get_product_from_cart";
+import addProductToCartConst from "./product/add_product_to_cart";
 
 export { forMenuConst, forSidebarConst,
     bannerForHomePageConst, getProductsForHomepageConst,
     getRecommendedProductConst, getNavigationProductsConst,
     getProductFromCartConst,
+    addProductToCartConst,
 };

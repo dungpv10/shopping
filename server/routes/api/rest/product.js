@@ -8,4 +8,5 @@ router.get("/create", productController.create);
 router.get("/recommended", productController.getRecommendedProduct);
 router.get("/navigation/home-page", productController.getNavigationProducts);
 router.get("/get-cart", productController.getCart);
+router.get("/add-product-to-cart", productController.addProductToCart);
 module.exports = router;

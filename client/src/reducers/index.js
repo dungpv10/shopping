@@ -6,6 +6,7 @@ import { getProductsForHomePage } from "./product/get_for_home_page";
 import { getRecommendedProduct } from "./product/get_recommended_product";
 import { getNavigationProducts } from "./product/get_navigation_product";
 import { getProductsFromCart } from "./product/get_product_from_cart";
+import { addProductToCart } from "./product/add_product_to_cart";
 
 const rootReducer = combineReducers({
     getCategoriesForMenu,
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
     getRecommendedProduct,
     getNavigationProducts,
     getProductsFromCart,
+    addProductToCart,
 });
 
 export default rootReducer;
