@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import MasterLayout from "../layouts/master_layout";
-import LoginForm from "./partials/login";
+import LoginFormRedux from "./partials/login";
 import SignupForm from "./partials/signup";
 
 class Login extends Component {
     constructor(props) {
         super(props);
+        this.handleLogin = this.handleLogin.bind(this);
+    }
+    handleLogin(values){
+        console.log(values);
     }
     render() {
         return (<MasterLayout>
@@ -15,7 +19,7 @@ class Login extends Component {
                         <div className="col-sm-4 col-sm-offset-1">
                             <div className="login-form">
                                 <h2>Đăng nhập</h2>
-                                <LoginForm />
+                                <LoginFormRedux onLogin={this.handleLogin} />
                             </div>
                         </div>
                         <div className="col-sm-1">

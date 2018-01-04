@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
-import { required, email } from "../../../../validations";
-// import { Notification } from "react-pnotify";
+import { required } from "../../../../validations";
 
 class LoginFormRedux extends Component {
     constructor(props) {
@@ -17,7 +16,6 @@ class LoginFormRedux extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleFocus = this.handleFocus.bind(this);
-        this.handleLogin = this.handleLogin.bind(this);
         this.handleBlur = this.handleBlur.bind(this);
     }
     getErrors(field) {
@@ -37,25 +35,37 @@ class LoginFormRedux extends Component {
         this.changeError(name, requireText);
         this.setState(this.state);
     }
-    handleFocus(e) {}
-    handleBlur(e) {}
-
-    handleLogin(e) {
-        e.preventDefault();
+    handleFocus(e) {
+        const name = e.target.name;
+        this.changeError(name, null);
+        this.setState(this.state);
     }
-
+    handleBlur(e) {
+        const name = e.target.name;
+        const value = e.target.value;
+        this.state[name] = value;
+        const requireText = required(value, name);
+        this.changeError(name, requireText);
+        this.setState(this.state);
+    }
     render() {
-        return (<form onSubmit={this.handleLogin}>
+        const { onLogin } = this.props;
+        return (<form onSubmit={onLogin}>
             {this.getErrors("username")}
             <Field
                 onChange={this.handleChange}
+                onFocus={this.handleFocus}
+                onBlur={this.handleBlur}
                 name={"username"}
                 component={"input"}
                 placeholder="Tên đăng nhập hoặc email" />
             {this.getErrors("password")}
-            <Field onChange={this.handleChange}
-                   type="password" name={"password"} component={"input"}
-                   placeholder="Mật khẩu" />
+            <Field
+                onChange={this.handleChange}
+                onFocus={this.handleFocus}
+                onBlur={this.handleBlur}
+                type="password" name={"password"} component={"input"}
+                placeholder="Mật khẩu" />
             <button type="submit" className="btn btn-default">Đăng nhập</button>
         </form>);
     }

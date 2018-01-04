@@ -3,11 +3,13 @@ import MasterLayout from "../layouts/master_layout";
 import GMap from "./partials/gmap";
 import ContactForm from "./partials/form_contact";
 import ContactInformation from "./partials/contact_infomation";
+import Helmet from "react-helmet";
 
 class Contact extends Component {
     render() {
         return (
             <MasterLayout>
+                <Helmet><title>Liên hệ | Mua bán organic</title></Helmet>
                 <div id="contact-page" className="container">
                     <div className="bg">
                         <div className="row">
