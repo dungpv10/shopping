@@ -4,6 +4,9 @@ import LoginForm from "./partials/login";
 import SignupForm from "./partials/signup";
 
 class Login extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (<MasterLayout>
             <section id="form">

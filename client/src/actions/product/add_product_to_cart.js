@@ -4,7 +4,7 @@ import { addProductToCartConst } from "../../consts";
 
 function addProductToCartAction(productId) {
     function request() {
-        return { type: addProductToCartConst.ADD_PRODUCT_TO_CART_SUCCESS };
+        return { type: addProductToCartConst.ADD_PRODUCT_TO_CART_REQUEST };
     }
     function success() {
         return { type: addProductToCartConst.ADD_PRODUCT_TO_CART_SUCCESS };

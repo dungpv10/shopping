@@ -6,10 +6,12 @@ import getRecommendedProductConst from "./product/get_recommended_product";
 import getNavigationProductsConst from "./product/get_navigation_product";
 import getProductFromCartConst from "./product/get_product_from_cart";
 import addProductToCartConst from "./product/add_product_to_cart";
+import loginConst from "./auth/login";
 
 export { forMenuConst, forSidebarConst,
     bannerForHomePageConst, getProductsForHomepageConst,
     getRecommendedProductConst, getNavigationProductsConst,
     getProductFromCartConst,
     addProductToCartConst,
+    loginConst,
 };

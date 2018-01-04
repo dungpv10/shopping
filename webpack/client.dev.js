@@ -19,6 +19,7 @@ module.exports = {
       './res/scss/price-range.css',
       // './res/scss/prettyPhoto.css',
       './res/scss/responsive.css',
+      './res/scss/custom.css',
       './res/js/index.js',
   ],
   output: {

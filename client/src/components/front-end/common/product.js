@@ -17,7 +17,7 @@ class Product extends Component {
         this.props.dispatch(addProductToCartAction(parseInt(this.props.product.id)));
 
         const productInCart = JSON.parse(localStorage.getItem("products_cart") || JSON.stringify({}));
-        const productArray = $.map(productInCart, function(id, index){
+        const productArray = $.map(productInCart, function(id, index) {
             return [id];
         });
         productArray.push(this.props.product.id);
