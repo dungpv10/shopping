@@ -3,10 +3,12 @@ import MasterLayout from "../layouts/master_layout";
 import Sidebar from "../common/sidebar";
 import SingleNews from "./partials/single";
 import Pagination from "../common/pagination";
+import Title from "../common/title";
 
 class News extends Component {
     render() {
         return (<MasterLayout>
+            <Title title={"Tin tức"} />
             <section>
                 <div className="container">
                     <div className="row">

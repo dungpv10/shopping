@@ -1,112 +1,33 @@
 import React, { Component } from "react";
-import imageThumbnail from "../../../../../res/images/home/iframe2.jpg";
-import map from "../../../../../res/images/home/map.jpg";
+import TopFooter from "./footer/top_footer";
 
 class Footer extends Component {
     render() {
         return (<footer id="footer">
-            <div className="footer-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-2">
-                            <div className="companyinfo">
-                                <h2><span>e</span>-shopper</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-                            </div>
-                        </div>
-                        <div className="col-sm-7">
-                            <div className="col-sm-3">
-                                <div className="video-gallery text-center">
-                                    <a href="#">
-                                        <div className="iframe-img">
-                                            <img src={imageThumbnail} alt=""/>
-                                        </div>
-                                        <div className="overlay-icon">
-                                            <i className="fa fa-play-circle-o"></i>
-                                        </div>
-                                    </a>
-                                    <p>Circle of Hands</p>
-                                    <h2>24 DEC 2014</h2>
-                                </div>
-                            </div>
-
-                            <div className="col-sm-3">
-                                <div className="video-gallery text-center">
-                                    <a href="#">
-                                        <div className="iframe-img">
-                                            <img src={imageThumbnail} alt="" />
-                                        </div>
-                                        <div className="overlay-icon">
-                                            <i className="fa fa-play-circle-o"></i>
-                                        </div>
-                                    </a>
-                                    <p>Circle of Hands</p>
-                                    <h2>24 DEC 2014</h2>
-                                </div>
-                            </div>
-
-                            <div className="col-sm-3">
-                                <div className="video-gallery text-center">
-                                    <a href="#">
-                                        <div className="iframe-img">
-                                            <img src={imageThumbnail} alt=""/>
-                                        </div>
-                                        <div className="overlay-icon">
-                                            <i className="fa fa-play-circle-o"></i>
-                                        </div>
-                                    </a>
-                                    <p>Circle of Hands</p>
-                                    <h2>24 DEC 2014</h2>
-                                </div>
-                            </div>
-
-                            <div className="col-sm-3">
-                                <div className="video-gallery text-center">
-                                    <a href="#">
-                                        <div className="iframe-img">
-                                            <img src={imageThumbnail} alt=""/>
-                                        </div>
-                                        <div className="overlay-icon">
-                                            <i className="fa fa-play-circle-o"></i>
-                                        </div>
-                                    </a>
-                                    <p>Circle of Hands</p>
-                                    <h2>24 DEC 2014</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-3">
-                            <div className="address">
-                                <img src={map} alt=""/>
-                                <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TopFooter />
 
             <div className="footer-widget">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-2">
                             <div className="single-widget">
-                                <h2>Service</h2>
+                                <h2>Dịch vụ</h2>
                                 <ul className="nav nav-pills nav-stacked">
-                                    <li><a href="#">Online Help</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Order Status</a></li>
-                                    <li><a href="#">Change Location</a></li>
-                                    <li><a href="#">FAQ’s</a></li>
+                                    <li><a href="#">Tư vấn trực tiếp</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">Chính sách</a></li>
+                                    <li><a href="#">Hỏi đáp</a></li>
+                                    <li><a href="#">Câu hỏi thường gặp</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-sm-2">
                             <div className="single-widget">
-                                <h2>Quock Shop</h2>
+                                <h2>Danh mục nổi bật</h2>
                                 <ul className="nav nav-pills nav-stacked">
-                                    <li><a href="#">T-Shirt</a></li>
-                                    <li><a href="#">Mens</a></li>
-                                    <li><a href="#">Womens</a></li>
+                                    <li><a href="#">Thực phẩm</a></li>
+                                    <li><a href="#">Đồ trẻ em</a></li>
+                                    <li><a href="#">Organic</a></li>
                                     <li><a href="#">Gift Cards</a></li>
                                     <li><a href="#">Shoes</a></li>
                                 </ul>
@@ -114,35 +35,35 @@ class Footer extends Component {
                         </div>
                         <div className="col-sm-2">
                             <div className="single-widget">
-                                <h2>Policies</h2>
+                                <h2>Chính sách</h2>
                                 <ul className="nav nav-pills nav-stacked">
-                                    <li><a href="#">Terms of Use</a></li>
-                                    <li><a href="#">Privecy Policy</a></li>
-                                    <li><a href="#">Refund Policy</a></li>
-                                    <li><a href="#">Billing System</a></li>
-                                    <li><a href="#">Ticket System</a></li>
+                                    <li><a href="#">Quy định</a></li>
+                                    <li><a href="#">Bảo mật</a></li>
+                                    <li><a href="#">Hoàn tiền</a></li>
+                                    <li><a href="#">Thanh toán</a></li>
+                                    <li><a href="#">Tri ân</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-sm-2">
                             <div className="single-widget">
-                                <h2>About Shopper</h2>
+                                <h2>Về chúng tôi</h2>
                                 <ul className="nav nav-pills nav-stacked">
-                                    <li><a href="#">Company Information</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Store Location</a></li>
-                                    <li><a href="#">Affillate Program</a></li>
-                                    <li><a href="#">Copyright</a></li>
+                                    <li><a href="#">Thông tin cửa hàng</a></li>
+                                    <li><a href="#">Nghề nghiệp</a></li>
+                                    <li><a href="#">Vị trí kho hàng</a></li>
+                                    <li><a href="#">Shopee</a></li>
+                                    <li><a href="#">Lazada</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-sm-3 col-sm-offset-1">
                             <div className="single-widget">
-                                <h2>About Shopper</h2>
+                                <h2>Nhận tin khuyến mại</h2>
                                 <form action="#" className="searchform">
                                     <input type="text" placeholder="Your email address"/>
-                                    <button type="submit" className="btn btn-default"><i className="fa fa-arrow-circle-o-right"></i></button>
-                                    <p>Get the most recent updates from <br/>our site and be updated your self...</p>
+                                    <button type="submit" className="btn btn-default"><i className="fa fa-arrow-circle-o-right" /></button>
+                                    <p>Vui lòng nhập email để được nhận bản tin <br/>khuyến mại sớm nhất</p>
                                 </form>
                             </div>
                         </div>
@@ -154,9 +75,7 @@ class Footer extends Component {
             <div className="footer-bottom">
                 <div className="container">
                     <div className="row">
-                        <p className="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-                        <p className="pull-right">Designed by <span><a target="_blank"
-                                                                   href="http://www.themeum.com">Themeum</a></span></p>
+                        <p className="pull-left">Copyright © 2018 Mua-Ban Inc. dungpv10@gmail.com.</p>
                     </div>
                 </div>
             </div>

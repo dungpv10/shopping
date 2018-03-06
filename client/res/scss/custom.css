@@ -1,0 +1,16 @@
+.invalid-error{
+    color: #a94442;
+}
+
+.btn-default[disabled] {
+    background-color: #FE980F;
+    border-color:inherit;
+}
+
+.well{
+    display: block;
+}
+
+#contact-page .form-control{
+    border-radius: 0;
+}

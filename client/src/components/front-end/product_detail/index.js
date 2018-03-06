@@ -230,7 +230,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery1.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery1.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -244,7 +244,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery2.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery1.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -258,7 +258,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery3.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery3.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -272,7 +272,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery4.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery4.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -289,7 +289,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery1.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery1.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -303,7 +303,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery3.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery3.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -317,7 +317,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery2.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery1.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -331,7 +331,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery4.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery4.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -348,7 +348,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery1.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery1.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -362,7 +362,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery2.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery1.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -376,7 +376,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery3.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery3.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -390,7 +390,7 @@ class ProductDetail extends Component {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/gallery4.jpg" alt=""/>
+                                                        <img src={require("../../../../res/images/home/gallery4.jpg")} alt=""/>
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
                                                         <button type="button" className="btn btn-default add-to-cart"><i
@@ -422,7 +422,7 @@ class ProductDetail extends Component {
 											<input type="email" placeholder="Email Address"/>
 										</span>
                                                 <textarea name=""></textarea>
-                                                <b>Rating: </b> <img src="images/product-details/rating.png" alt=""/>
+                                                <b>Rating: </b> <img src={require("../../../../res/images/product-details/rating.png")} alt=""/>
                                                 <button type="button" className="btn btn-default pull-right">
                                                     Submit
                                                 </button>
@@ -443,7 +443,7 @@ class ProductDetail extends Component {
                                                 <div className="product-image-wrapper">
                                                     <div className="single-products">
                                                         <div className="productinfo text-center">
-                                                            <img src="images/home/recommend1.jpg" alt=""/>
+                                                            <img src={require("../../../../res/images/home/recommend1.jpg")} alt=""/>
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
                                                             <button type="button"
@@ -458,7 +458,7 @@ class ProductDetail extends Component {
                                                 <div className="product-image-wrapper">
                                                     <div className="single-products">
                                                         <div className="productinfo text-center">
-                                                            <img src="images/home/recommend2.jpg" alt=""/>
+                                                            <img src={require("../../../../res/images/home/recommend2.jpg")} alt=""/>
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
                                                             <button type="button"
@@ -473,7 +473,7 @@ class ProductDetail extends Component {
                                                 <div className="product-image-wrapper">
                                                     <div className="single-products">
                                                         <div className="productinfo text-center">
-                                                            <img src="images/home/recommend3.jpg" alt=""/>
+                                                            <img src={require("../../../../res/images/home/recommend3.jpg")} alt=""/>
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
                                                             <button type="button"
@@ -490,7 +490,7 @@ class ProductDetail extends Component {
                                                 <div className="product-image-wrapper">
                                                     <div className="single-products">
                                                         <div className="productinfo text-center">
-                                                            <img src="images/home/recommend1.jpg" alt=""/>
+                                                            <img src={require("../../../../res/images/home/recommend1.jpg")} alt=""/>
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
                                                             <button type="button"
@@ -505,7 +505,7 @@ class ProductDetail extends Component {
                                                 <div className="product-image-wrapper">
                                                     <div className="single-products">
                                                         <div className="productinfo text-center">
-                                                            <img src="images/home/recommend2.jpg" alt=""/>
+                                                            <img src={require("../../../../res/images/home/recommend2.jpg")} alt=""/>
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
                                                             <button type="button"
@@ -520,7 +520,7 @@ class ProductDetail extends Component {
                                                 <div className="product-image-wrapper">
                                                     <div className="single-products">
                                                         <div className="productinfo text-center">
-                                                            <img src="images/home/recommend3.jpg" alt=""/>
+                                                            <img src={require("../../../../res/images/home/recommend3.jpg")} alt=""/>
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
                                                             <button type="button"
