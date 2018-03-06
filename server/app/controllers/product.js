@@ -119,6 +119,7 @@ const productController = {
         res.json({ productIds });
         productIds.push(req.query.product_id);
         localStorage.setItem("products_cart", JSON.stringify(productIds));
+
         res.json({
             code: 1,
             message: "add product to cart successfully",

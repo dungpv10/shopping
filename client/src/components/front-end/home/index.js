@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import MasterLayout from "../layouts/master_layout";
 import HomeSlider from "./partials/slider";
 import HomeMainContent from "./partials/main-content";
-import Helmet from "react-helmet";
+import Title from "../common/title";
 
 class Home extends Component {
     render() {
         return (<MasterLayout>
-            <Helmet><title>Trang chủ | Mua bán sản phẩm organic sạch</title></Helmet>
+            <Title />
             <HomeSlider />
             <HomeMainContent />
         </MasterLayout>);

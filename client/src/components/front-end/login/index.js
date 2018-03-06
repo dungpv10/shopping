@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MasterLayout from "../layouts/master_layout";
 import LoginFormRedux from "./partials/login";
 import SignupForm from "./partials/signup";
+import Title from "../common/title";
 
 class Login extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Login extends Component {
     }
     render() {
         return (<MasterLayout>
+            <Title title={"Đăng nhập"} />
             <section id="form">
                 <div className="container">
                     <div className="row">

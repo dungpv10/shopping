@@ -6,6 +6,7 @@ import Sidebar from "../common/sidebar";
 import Pagination from "../common/pagination";
 import getProductsForHomePageAction from "../../../actions/product/get_for_home_page";
 import { connect } from "react-redux";
+import Title from "../common/title";
 
 class Shop extends Component {
     componentDidMount() {
@@ -15,6 +16,7 @@ class Shop extends Component {
         const products = this.props.getProductsForHomePage;
         return (
             <MasterLayout>
+                <Title title={"Sản phẩm"} />
                 <section id="advertisement">
                     <div className="container">
                         <img src={imgAd} alt="" />
