@@ -20,21 +20,19 @@ class BottomMenu extends Component {
             </div>
             <div className="mainmenu pull-left">
                 <ul className="nav navbar-nav collapse navbar-collapse">
-                    <li><Link to="/"><i className="fa fa-home" /> Trang chủ</Link></li>
-                    <li><Link to="/danh-muc"><i className="fa fa-terminal" /> Sản phẩm</Link></li>
+                    <li><Link to="/"> Trang chủ</Link></li>
+                    <li><Link to="/danh-muc"> Sản phẩm</Link></li>
                     <li className="dropdown">
-                        <a>
-                            <i className="fa fa-gavel" /> Danh mục<i className="fa fa-angle-down" />
-                        </a>
+                        <a>Danh mục<i className="fa fa-angle-down" /></a>
                         <ul role="menu" className="sub-menu">
                             {getCategoriesForMenu.menu_categories.map((category, index) =>{
                                 return (<li key={ index }><Link to={`/danh-muc/${category.slug}`}>{category.category_name}</Link></li>);
                             })}
                         </ul>
                     </li>
-                    <li><Link to="/tin-tuc"><i className="fa fa-share" aria-hidden="true" /> Tin tức</Link></li>
+                    <li><Link to="/tin-tuc"> Tin tức</Link></li>
 
-                    <li><Link to="/lien-he"><i className="fa fa-coffee" aria-hidden="true" /> Liên hệ</Link></li>
+                    <li><Link to="/lien-he"> Liên hệ</Link></li>
                 </ul>
             </div>
         </div>);

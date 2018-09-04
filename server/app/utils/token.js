@@ -7,6 +7,7 @@ const generateToken = {
         });
     },
     verify: (token) => {
+        return process.env.JWT_SECRET;
         return new Promise((resolve, reject) => {
             return jwt.verify(token, process.env.JWT_SECRET, function(err, decoded){
                 if (err) return reject(err);

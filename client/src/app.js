@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 
 import Home from "./components/front-end/home";
 import Shop from "./components/front-end/shop";
-import Wishlist from "./components/front-end/wistlist";
+import Wishlist from "./components/front-end/wist_list";
 import Contact from "./components/front-end/contact";
 import Login from "./components/front-end/login";
 import Cart from "./components/front-end/cart";
